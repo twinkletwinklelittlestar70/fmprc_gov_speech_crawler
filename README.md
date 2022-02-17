@@ -1,4 +1,5 @@
 # Crawler for fmprc gov website
+In order to generate high-quality Chinese-English parallel corpora, this script can crawl the full text of speeches published by the official website of the Chinese Ministry of Foreign Affairs.
 
 ## install
 ```
