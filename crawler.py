@@ -62,6 +62,10 @@ if __name__ == '__main__':
     article_links_cn = get_article_list(LIST_PAGE_URL_CN, '.newsBd a')
     # article_links = ['./202112/t20211201_10460659.shtml'] # for test
     
+    # other page of list
+    for page in range(1, 24):  # 24
+        article_links_cn += get_article_list(LIST_PAGE_URL_CN + "index_%d.shtml" % page, '.newsBd a')
+                
     for index, link in enumerate(article_links_cn):
         full_link = LIST_PAGE_URL_CN + link
         # print('full_link:', full_link)
